@@ -1,4 +1,4 @@
-# Global Extension: traceId
+# Global Extension Field: `traceId`
 
 In accordance with [RFC 9457 Section 3.2 (Extension Members)](https://www.rfc-editor.org/rfc/rfc9457.html#name-extension-members), `"traceId"` is a global extension field applicable to any Problem Type defined in this registry.
 
