@@ -19,11 +19,11 @@ This problem type is used when a request is syntactically correct (e.g., valid J
 
 Extension fields specific to this problem type are documented above (e.g. `"errors"`). These follow the extension mechanism defined in [RFC 9457 Section 3.2](https://www.rfc-editor.org/rfc/rfc9457.html#name-extension-members).
 
-In addition, the Problem Details response may contain global extension fields; these are applicable to responses associated with any Problem Type in this registry and can be found at [[https://cloudcartco/problemregistry/extensions](https://cloudcartco.github.io/problemregistry/extensions)]([https://cloudcartco/problemregistry/extensions](https://cloudcartco.github.io/problemregistry/extensions)).
+In addition, the Problem Details response may contain global extension fields; these are applicable to responses associated with any Problem Type in this registry and can be found at [https://cloudcartco/problemregistry/extensions](https://cloudcartco.github.io/problemregistry/extensions)]([https://cloudcartco/problemregistry/extensions](https://cloudcartco.github.io/problemregistry/extensions)).
 
 ## Example Response
 
-The following is a sample payload for this problem type, including the required `errors` object and the [global `traceId` extension](https://cloudcartco.github.io/problemregistry/extensions/traceId) used for log correlation.
+The following is a sample payload for this problem type, including the required `errors` object and the global [`traceId` extension field](https://cloudcartco.github.io/problemregistry/extensions/traceId) used for log correlation.
 
 ```json
 {
