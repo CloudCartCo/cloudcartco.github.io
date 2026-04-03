@@ -6,7 +6,7 @@ This page defines the standard problem type used by CloudCartCo APIs when a requ
 
 | Field | Purpose | Value |
 | :--- | :--- | :--- |
-| `"type"` | **Identity** | `https://cloudcartco/problemregistry/problems/validation-error` |
+| `"type"` | **Identity** | `https://cloudcartco.github.io/problemregistry/problems/validation-error` |
 | `"title"` | **Summary** | One or more validation errors occurred. |
 | `"status"` | **Status Code** | 422 |
 | `"errors"` | **Extension Field** | An extension field to describe the all the validation errors that are to be communicated to the API caller. |
@@ -27,7 +27,7 @@ The following is a sample payload for this problem type, including the required 
 
 ```json
 {
-  "type": "https://cloudcartco/problemregistry/problems/validation-error",
+  "type": "https://cloudcartco.github.io/problemregistry/problems/validation-error",
   "title": "One or more validation errors occurred.",
   "status": 422,
   "detail": "The request contained invalid data in the payload.",
