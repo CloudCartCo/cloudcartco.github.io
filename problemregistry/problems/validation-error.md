@@ -9,7 +9,7 @@ This page defines the standard problem type used by CloudCartCo APIs when a requ
 | `"type"` | **Identity** | `https://cloudcartco.github.io/problemregistry/problems/validation-error` |
 | `"title"` | **Summary** | One or more validation errors occurred. |
 | `"status"` | **Status Code** | 422 |
-| `"errors"` | **Extension Field** | An extension field to describe the all the validation errors that are to be communicated to the API caller. The value of this field is a JSON fragment in which each property is a field in the request that contained one or more valiadtion errors. The value of that property in the fragment is an array of strings in which each string is a validation error in the corresponding request field. See example below.|
+| `"errors"` | **Extension Field** | An extension field to describe the all the validation errors that are to be communicated to the API caller. The value of this field is a JSON fragment in which each property is a field in the request body that contained one or more validation errors. The value of a property in the fragment is an array of strings in which each string is a validation error in the corresponding field in request body. See example below.|
 
 ## Description
 
