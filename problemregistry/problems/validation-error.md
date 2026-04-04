@@ -30,7 +30,6 @@ The following is a sample payload for this problem type, including the required 
   "type": "https://cloudcartco.github.io/problemregistry/problems/validation-error",
   "title": "One or more validation errors occurred.",
   "status": 422,
-  "detail": "The request contained invalid data in the payload.",
   "instance": "/orders/checkout",
   "errors": {
     "quantity": [
