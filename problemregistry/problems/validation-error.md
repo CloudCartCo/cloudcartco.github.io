@@ -9,7 +9,7 @@ This page defines the standard problem type used by CloudCartCo APIs when a requ
 | `"type"` | **Identity** | `https://cloudcartco.github.io/problemregistry/problems/validation-error` |
 | `"title"` | **Summary** | One or more validation errors occurred. |
 | `"status"` | **Status Code** | 422 |
-| `"errors"` | **Extension Field** | An extension field to describe the all the validation errors that are to be communicated to the API caller. |
+| `"errors"` | **Extension Field** | An extension field to describe the all the validation errors that are to be communicated to the API caller. The value of this field is a JSON fragment in which each property is a field in the request that contained one or more valiadtion errors. The value of that property in the fragment is an array of strings in which each string is a validation error in the corresponding request field. See example below.|
 
 ## Description
 
@@ -33,10 +33,10 @@ The following is a sample payload for this problem type, including the required 
   "detail": "The request contained invalid data in the payload.",
   "instance": "/orders/checkout",
   "errors": {
-    "Quantity": [
-      "The Quantity field must be at least 1."
+    "quantity": [
+      "The quantity field must be at least 1."
     ],
-    "CouponCode": [
+    "couponCode": [
       "The coupon code 'DISCOUNT10' is no longer valid."
     ]
   },
